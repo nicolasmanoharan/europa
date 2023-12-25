@@ -6,10 +6,11 @@ import europa
 
 
 #import variable environnement
+storage_account_name = os.environ["STORAGE_ACCOUNT_NAME"]
+storage_account_key = os.environ["STORAGE_ACCOUNT_KEY"]
 
-
-result = europa.manipulate_table("stodsalesforcemag000",
-                 "",
+result = europa.manipulate_table(storage_account_name,
+                 storage_account_key,
                  "test",
                  "read")
 
@@ -18,3 +19,6 @@ st.set_page_config(
 )
 
 st.title("Table Manager Saleforce")
+
+
+edited_df = st.data_editor(result, num_rows="dynamic")
