@@ -5,6 +5,9 @@
 - Type of analysis:
 
 Please document the project the better you can.
+# Deploy Azure Web App
+
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fnicolasmanoharan%2Feuropa%2Fmain%2Fazuredeploy.json)
 
 # Startup the project
 
